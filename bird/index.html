@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Printemps | dev.vinetos.fr</title>
+
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Stealsheet -->
+    <link rel="stylesheet" type="text/css" href="../common/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/parallax.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/bar.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/default.css">
+
+    <link rel="stylesheet" type="text/css" href="css/birds.css">
+    <link rel="stylesheet" type="text/css" href="css/glow.css">
+
+    <!-- Google font -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,500,700' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300'
+          rel='stylesheet' type='text/css'/>
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" style="border-top: 4px solid #2ecc71;"></div>
+</div>
+<div class="container">
+    <ul id="scene" class="scene">
+        <li class="layer" data-depth="0.20">
+            <div class="background"></div>
+        </li>
+        <li class="layer" data-depth="0.20">
+
+            <!-- Particles -->
+            <div id="particles-js"></div>
+
+        </li>
+
+        <!-- Bird Section -->
+        <!-- Normal bird -->
+        <li class="layer" data-depth="0.40"><img class="bird" src="img/bird.png"></li>
+
+        <!-- Bird Composition -->
+        <!-- Gold bird -->
+        <li class="layer" data-depth="0.40"><img class="bird bird-gold" src="img/bird-gold.png"></li>
+
+        <!-- Left eye -->
+        <li class="layer" data-depth="0.40"><img id="eye-l" class="bird bird-eyes" src="img/bird-eye-l.png"></li>
+        <!-- Left pupil -->
+        <li class="layer" data-depth="0.40">
+            <div id="pupil-l" class="bird bird-pupils"></div>
+        </li>
+
+        <!-- Right eye -->
+        <li class="layer" data-depth="0.40"><img id="eye-r" class="bird bird-eyes" src="img/bird-eye-r.png"></li>
+        <!-- Right pupil -->
+        <li class="layer" data-depth="0.40">
+            <div id="pupil-r" class="bird bird-pupils"></div>
+        </li>
+
+        <!-- End Bird Section -->
+
+        <!-- Typed texte section -->
+        <li class="layer" data-depth="0.80">
+            <div class="text">
+                <span id="tagline"><span id="typed"></span></span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script src="../common/js/common.js"></script>
+</body>
+
+</html>

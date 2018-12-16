@@ -1,0 +1,150 @@
+/** TREES **/
+.bird {
+    height: auto;
+    width: auto;
+    /*-webkit-animation: neon5 1.5s linear infinite alternate;
+  -moz-animation: neon5 1.5s linear infinite alternate;
+  animation: neon5 1.5s linear infinite alternate;*/
+}
+
+.bird-gold {
+    opacity: 0;
+}
+
+/*.bird-gold img:hover{
+  -webkit-animation: op 5s linear infinite alternate;
+  -moz-animation: op 5s linear infinite alternate;
+  animation: op 5s linear infinite alternate;
+}*/
+
+/*
+//.bird-eyes {
+//    See index.js
+//  -webkit-animation: closingEyes 7s linear infinite alternate;
+//  -moz-animation: closingEyes 7s linear infinite alternate;
+//  animation: closingEyes 7s linear infinite alternate;
+//}
+*/
+
+.bird-pupils {
+    position: relative;
+    top: 235px;
+    width: 5px;
+    height: 5px;
+    -webkit-animation: neon 5s linear infinite alternate;
+    -moz-animation: neon 5s linear infinite alternate;
+    animation: neon 5s linear infinite alternate;
+}
+
+/* GLOWING */
+@keyframes neon {
+    from {
+        box-shadow: 0 0 30px #FF9900, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+        box-shadow: 0 0 15px #FF9900, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}
+
+@-webkit-keyframes neon {
+    from {
+        box-shadow: 0 0 30px #FF9900, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+        box-shadow: 0 0 15px #FF9900, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}
+
+@-moz-keyframes neon {
+    from {
+        box-shadow: 0 0 30px #FF9900, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    to {
+        box-shadow: 0 0 15px #FF9900, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}
+
+/* OPACITY ANIMATION */
+@keyframes op {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes op {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes op {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* EYES ANIMATION (see index.js)*/
+
+@keyframes closeEyes {
+    from {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes closeEyes {
+    from {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes closeEyes {
+    from {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
